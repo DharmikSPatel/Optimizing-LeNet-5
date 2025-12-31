@@ -1,1 +1,8 @@
 .DS_Store
+**/.DS_Store
+
+# Data and Project Folders
+MNIST Data Problem 1/
+affNIST Data Problem 2/
+data/
+RBF Kernel/Data
