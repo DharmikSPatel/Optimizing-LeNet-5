@@ -1,7 +1,7 @@
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 import torch.utils.data as torchutils
-import mnist
+import Utils.mnist as mnist
 import torch
 import numpy as np
 from LeNet5_train import LeNet5
