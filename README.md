@@ -3,8 +3,6 @@
 **Files**
 
 - LeNet5_1.pth - The model
-  - BOX LINK:
-    <https://rutgers.box.com/s/j8ptygcabbqvy9xoba3ck1ea4exlkx8h>
 - LeNet5_data.py
 - LeNet5_train.py
 - LeNet5_test.py
@@ -168,8 +166,6 @@ misclassified with the highest confidence as "9" but was in reality a 4.
 **Files**
 
 - LeNet5_2.pth - The Model
-  - BOX LINK:
-    <https://rutgers.box.com/s/2emopqzvsnwi58yr5didjfe1ageblu1x>
 - ModifiedLeNet5_data.py
 - ModifiedLeNet5_train.py
 - ModifiedLeNet5_test.py
