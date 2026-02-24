@@ -3,70 +3,34 @@
 **Files**
 
 - LeNet5_1.pth - The model
-
   - BOX LINK:
     <https://rutgers.box.com/s/j8ptygcabbqvy9xoba3ck1ea4exlkx8h>
-
-- test1.py
-
-  - **used for grading**
-
-  - has the proper **prepossessing** **transforms**
-
-  - has the proper **test code**
-
 - LeNet5_data.py
-
 - LeNet5_train.py
-
 - LeNet5_test.py
 
-- MNIST Data Problem 1 Folder
-
-  - outputed data from LeNet5_data.py
-
-  - used in training and testing
-
 - RBF Kernel Folder
-
   - rbf_kernel.py
-
-  - Data Folder
-
-    - data used to make the kernels
-
   - FinalKernels Folder
-
     - 1 image per kernel (for visualization)
-
     - rbf_weights (used in training)
 
 **Graphics**
 
 - most_confusing_test_samples.png
-
 - test_train_error_perc.png
-
 - confusion_matrix.png
 
-**Libraries**
+**Needed Libraries**
 
 - pandas
-
 - torch
-
 - torchvision
-
 - PIL
-
 - torchsummary
-
 - numpy
-
 - matplotlib
-
 - torcheval
-
 - seaborn
 
 **How to Run** First, *LeNet5_data.py* was used to normalize the data
@@ -120,26 +84,10 @@ able to crop without getting rid of information. Then we resized it to a
 a 84 value 1D tensor and saved it in *./FinalKernels/rbf_weights.* We
 did 84 beceause the F6 layer had 84 out features.
 
-<figure id="fig:grid" data-latex-placement="H">
-<table>
-<tbody>
-<tr>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<figcaption>7x12 RBF Kernels per digit</figcaption>
+
+<figure id="fig:enter-label" data-latex-placement="H">
+<img src="Orginal LeNet 5/RBF Kernel/FinalKernels/Allin1.png" />
+<figcaption>Figure 1: 7x12 RBF Kernels per digit.</figcaption>
 </figure>
 
 **Other notes:** The parameters for each layer are initialized between
@@ -186,7 +134,7 @@ On epoch 20, the Train Error was $`0.82\%`$, and the Test Error was
 $`1.37\%`$.
 
 <figure id="fig:enter-label" data-latex-placement="H">
-<img src="test_train_error_perc.png" />
+<img src="Orginal LeNet 5/Graphics/test_train_error_perc.png" />
 <figcaption>Error Rates. Shows that around epoch 10-11, the test error
 stabilized, but the train error continued decrease which indicated
 slight over fitting. It is not major over fitting because the test error
@@ -196,7 +144,7 @@ is not getting worse.</figcaption>
 ### Confusion Matrix
 
 <figure id="fig:enconsfuter-label" data-latex-placement="H">
-<img src="cofusion_matrix.png" />
+<img src="Orginal LeNet 5/Graphics/cofusion_matrix.png" />
 <figcaption>Confusion Matrix on test data of <span
 class="math inline">\(10000\)</span> samples. The rows represent the
 actual digit labels, while the columns represent the predicted digit
@@ -207,7 +155,7 @@ corresponding actual and predicted digit combination.</figcaption>
 ### Most Confusing
 
 <figure id="fig:ente3r-label" data-latex-placement="H">
-<img src="most_confusing_test_samples.png" style="width:100.0%" />
+<img src="Orginal LeNet 5/Graphics/most_confusing_test_samples.png" style="width:100.0%" />
 <figcaption>Most Confusing Sample. This figure answers the question:
 "What image was misclassified with the highest confidence as the digit
 "x." So just to explain further, the last image in the figure above was
@@ -220,40 +168,18 @@ misclassified with the highest confidence as "9" but was in reality a 4.
 **Files**
 
 - LeNet5_2.pth - The Model
-
   - BOX LINK:
     <https://rutgers.box.com/s/2emopqzvsnwi58yr5didjfe1ageblu1x>
-
-- test2.py
-
-  - **used for grading**
-
-  - has the proper **pre-processing transforms**
-
-  - has the proper **test code**
-
 - ModifiedLeNet5_data.py
-
 - ModifiedLeNet5_train.py
-
 - ModifiedLeNet5_test.py
 
-- affNIST Data Problem 2 Folder
-
-  - outputed data from ModifiedLeNet5_data.py
-
-  <!-- -->
-
-  - used in training and validation
-
 - Problem 2 Models Folder
-
   - used to store the models after each epoch
 
 **Graphics**
 
 - P2_test_validation_error_perc.png
-
 - P2_transformed_data_sample.png
 
 **How to Run** First, ModifiedLeNet5_data.py is used to collect and
@@ -301,7 +227,7 @@ have different transformation so we can thoroughly pick the best model.
 All data for problem 2 is stored in the *affNIST Data Problem 2* Folder.
 
 <figure id="fig:enter-label" data-latex-placement="H">
-<img src="P2_transformed_data_sample.png" style="width:100.0%" />
+<img src="Optimized LeNet 5/Graphics/P2_transformed_data_sample.png" style="width:100.0%" />
 <figcaption>Sample Data from X_train</figcaption>
 </figure>
 
@@ -381,7 +307,7 @@ used the FULL sets, it would take too long.
 Final Validation Error on the full validation set is $`4.185\%`$ .
 
 <figure id="fig:edddnter-label" data-latex-placement="H">
-<img src="P2_test_validation_error_perc.png" style="width:100.0%" />
+<img src="Optimized LeNet 5/Graphics/P2_test_validation_error_perc.png" style="width:100.0%" />
 <figcaption>This is the error rates graph for Problem 2. Read the Early
 Stopping Section to see what model we picked.</figcaption>
 </figure>
