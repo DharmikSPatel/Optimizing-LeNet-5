@@ -12,7 +12,7 @@
 
 **Graphics**
 
-- P2_test_validation_error_perc.png
+- P2_test_validation_error_perc.png 
 - P2_transformed_data_sample.png
 
 **How to Run** First, ModifiedLeNet5_data.py is used to collect and
